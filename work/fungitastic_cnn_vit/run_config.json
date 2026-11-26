@@ -1,0 +1,31 @@
+{
+  "seed": 42,
+  "device": "cpu",
+  "torch": "2.15.0+cpu",
+  "torchvision": "0.29.2+cpu",
+  "cnn_epochs": 8,
+  "cnn_best_epoch": 6,
+  "vit_head_epochs": 30,
+  "vit_best_epoch": 29,
+  "vit_head_lr": 0.001,
+  "threshold": 0.5,
+  "vit_weights": "ViT_B_16_Weights.IMAGENET1K_V1",
+  "vit_feature_protocol": "torchvision-vit_b_16-IMAGENET1K_V1-resize256-centercrop224-defaultnorm-exif-v1",
+  "feature_seconds": {
+    "train": 662.7006833000341,
+    "val": 294.67174009996234,
+    "test": 556.730601600022
+  },
+  "feature_cache_hits": {
+    "train": false,
+    "val": false,
+    "test": false
+  },
+  "vit_head_seconds": 2.0953194000176154,
+  "counts": {
+    "train": 3000,
+    "val": 1000,
+    "test": 1500
+  },
+  "validation_selected_model": "ViT-B/16 (frozen + linear head)"
+}

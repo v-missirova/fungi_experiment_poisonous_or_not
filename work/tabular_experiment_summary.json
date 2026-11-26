@@ -1,0 +1,81 @@
+{
+  "best_parameters": {
+    "Naive Bayes (Bernoulli)": {
+      "model__alpha": 0.1
+    },
+    "Decision Tree": {
+      "model__max_depth": 6,
+      "model__min_samples_leaf": 1
+    },
+    "Random Forest": {
+      "model__max_depth": null,
+      "model__min_samples_leaf": 1
+    }
+  },
+  "cv": [
+    {
+      "model": "Random Forest",
+      "CV_F1_mean": 1.0,
+      "CV_F1_std": 0.0
+    },
+    {
+      "model": "Decision Tree",
+      "CV_F1_mean": 0.9996805111821085,
+      "CV_F1_std": 0.0006389776357827336
+    },
+    {
+      "model": "Naive Bayes (Bernoulli)",
+      "CV_F1_mean": 0.9517441206096129,
+      "CV_F1_std": 0.010849677818042426
+    }
+  ],
+  "test": [
+    {
+      "model": "Naive Bayes (Bernoulli)",
+      "accuracy": 0.9581538461538461,
+      "precision_p": 0.9877216916780355,
+      "recall_p": 0.9246487867177522,
+      "F1_p": 0.9551451187335093,
+      "ROC_AUC": 0.997606501578981,
+      "average_precision": 0.9974855259687639,
+      "poisonous_as_edible_FN": 59,
+      "edible_as_poisonous_FP": 9
+    },
+    {
+      "model": "Decision Tree",
+      "accuracy": 0.9987692307692307,
+      "precision_p": 1.0,
+      "recall_p": 0.9974457215836526,
+      "F1_p": 0.9987212276214834,
+      "ROC_AUC": 0.9999453954732846,
+      "average_precision": 0.9998877240256551,
+      "poisonous_as_edible_FN": 2,
+      "edible_as_poisonous_FP": 0
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 1.0,
+      "precision_p": 1.0,
+      "recall_p": 1.0,
+      "F1_p": 1.0,
+      "ROC_AUC": 1.0,
+      "average_precision": 1.0,
+      "poisonous_as_edible_FN": 0,
+      "edible_as_poisonous_FP": 0
+    },
+    {
+      "model": "Dummy (majority)",
+      "accuracy": 0.5181538461538462,
+      "precision_p": 0.0,
+      "recall_p": 0.0,
+      "F1_p": 0.0,
+      "ROC_AUC": 0.5,
+      "average_precision": 0.48184615384615387,
+      "poisonous_as_edible_FN": 783,
+      "edible_as_poisonous_FP": 0
+    }
+  ],
+  "train_count": 6499,
+  "test_count": 1625,
+  "seed": 42
+}
